@@ -7,7 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "gastromap",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": true
     },
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.josselynharo.gastromap"
     },
     "web": {
       "output": "static",
@@ -42,7 +43,15 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": false
+    },
+    "extra": {
+      "expoPublicSupabaseUrl": "TU_URL_DE_SUPABASE",
+      "expoPublicSupabaseAnonKey": "TU_ANON_KEY_DE_SUPABASE",
+      "router": {},
+      "eas": {
+        "projectId": "ff3af2f9-ed96-4241-a4e7-d2cd43dc2fdc"
+      }
     }
   }
 }
